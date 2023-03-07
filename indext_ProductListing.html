@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <style>
+        *{
+            margin: 0;
+        }
+
+        #wrapper{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        #wrapper__navbar{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #navbar-menu{
+            width: 25%;
+        }
+
+        #menu-categories {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            
+        }
+
+        #menu-categories-item{
+            padding: 5px;
+        }
+
+        #navbar-search{
+            width: 25%%;
+            display: flex;
+        }
+
+
+        #search{
+            width: 200;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="wrapper__navbar">
+            <div id="navbar-menu">
+                <ul id="menu-categories">
+                    <li id="menu-categories-item">
+                        <a href="#">Shop</a>
+                    </li>
+                    <li id="menu-categories-item">
+                        <a href="#">Offers</a>
+                    </li>
+                    <li id="menu-categories-item">
+                        <a href="#">Our story</a>
+                    </li>
+                    <li id="menu-categories-item">
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="navbar-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div id="navbar-search">
+                <input type="text" id="search" placeholder="Search product...">
+                <img src="img/shoppingCart.png" alt="">
+                <img src="img/user.png" alt="">
+            </div>
+        </div>
+
+        <div id="banner">
+            <img src="img/banner.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
