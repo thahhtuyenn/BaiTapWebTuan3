@@ -16,15 +16,16 @@
         #wrapper{
             display: flex;
             flex-direction: column;
-            margin-top: 20px;
             align-items: center;
+            width: 100%;
         }
 
         #wrapper__navbar{
-            width: 100%;
+            width: 90%;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
+            padding: 5px 0;
         }
 
         #navbar-menu{
@@ -43,14 +44,45 @@
             padding: 5px;
         }
 
+        .item-link{
+            text-decoration: none;
+            color: #636973; 
+            font-size: 20px;
+        }
+
         #navbar-search{
             width: 25%%;
             display: flex;
         }
 
+        .search{
+            border: 1px solid gray;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .icon-search{
+            color: #636973;
+            margin-left: 5px;
+        }
+        .input-search{
+            border: none;
+            outline: none;
+            width: 200px;
+        }
 
-        #search{
-            width: 200;
+        #navbar__banner{
+           width: 100%;
+        }
+
+        #banner-img{
+           
+        }
+        .banner-title{
+            
+        }
+        .banner-line{
+           
         }
     </style>
 </head>
@@ -60,16 +92,16 @@
             <div id="navbar-menu">
                 <ul id="menu-categories">
                     <li id="menu-categories-item">
-                        <a href="#">Shop</a>
+                        <a class="item-link" href="#">Shop</a>
                     </li>
                     <li id="menu-categories-item">
-                        <a href="#">Offers</a>
+                        <a class="item-link" href="#">Offers</a>
                     </li>
                     <li id="menu-categories-item">
-                        <a href="#">Our story</a>
+                        <a class="item-link" href="#">Our story</a>
                     </li>
                     <li id="menu-categories-item">
-                        <a href="#">Blog</a>
+                        <a class="item-link" href="#">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -77,14 +109,22 @@
                 <img src="img/logo.png" alt="">
             </div>
             <div id="navbar-search">
-                <input type="text" id="search" placeholder="Search product...">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass icon-search" ></i>
+                    <input type="text" class="input-search" placeholder="Search product...">
+                </div>
+                
                 <img src="img/shoppingCart.png" alt="">
                 <img src="img/user.png" alt="">
             </div>
         </div>
 
-        <div id="banner">
-            <img src="img/banner.png" alt="">
+        <div id="navbar__banner">
+            <img src="img/banner.png" alt="" id="banner-img">
+            <h1 class="banner-title">Gift for your skin</h1>
+            <p class="banner-line">Aliquip fugiat ipsum nostrud ex et eu incididunt
+                <br>quis minim dolore excepteur voluptate
+            </p>
         </div>
     </div>
 </body>
