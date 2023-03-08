@@ -10,121 +10,259 @@
 
     <style>
         *{
+            box-sizing: inherit;
             margin: 0;
         }
 
-        #wrapper{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
+        html{
+            box-sizing: border-box;
         }
 
-        #wrapper__navbar{
-            width: 90%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 5px 0;
+        .grid {
+            margin: 0 auto;
+            width: 1200px;
         }
 
-        #navbar-menu{
+        .grid__row{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+
+        .grid__column2{
+            padding: 0 15px;
+            width: 16.7%;
+        }
+
+        .grid__column3{
+            padding: 0 15px;
             width: 25%;
         }
 
-        #menu-categories {
+        .grid__column4{
+            padding: 0 15px;
+            width: 33%;
+        }
+
+        .grid__column6{
+            padding: 0 15px;
+            width: 50%;
+        }
+
+        /* css navbar */
+        #wrapper__navbar{
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+        }
+
+        #navbar-menu{
+            display: flex;
+            justify-content: space-between;
             align-items: center;
             list-style: none;
+            padding: 5px;
+            width: 25%;
+        }
+
+        #navbar-menu-item{
+            padding: 10px;
             
         }
-
-        #menu-categories-item{
-            padding: 5px;
-        }
-
-        .item-link{
+        .menu-item-link{
             text-decoration: none;
-            color: #636973; 
-            font-size: 20px;
+            color: #737881;
         }
 
-        #navbar-search{
-            width: 25%%;
+        #navbar-searching{
+            width: 25%;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-
         .search{
-            border: 1px solid gray;
+            border: 1px solid #aaabad;
             border-radius: 5px;
+            width: 200px;
+            height: 40px;
             display: flex;
             align-items: center;
         }
         .icon-search{
-            color: #636973;
-            margin-left: 5px;
+            padding-left: 10px;
+            color: #aaabad;
         }
         .input-search{
             border: none;
             outline: none;
-            width: 200px;
         }
 
-        #navbar__banner{
-           width: 100%;
+        /* css banner */
+        .wrapper__banner{
+            width: 100%;
+            position: relative;
         }
 
-        #banner-img{
-           
+        #banner-text{
+            position: absolute;
+            left: 10%;
+            top: 30%;
         }
-        .banner-title{
-            
+
+        #banner-title{
+           font-size: 45px;
+           color: #323842;
         }
-        .banner-line{
-           
+
+        #banner-line{
+            font-size: 18px;
+            padding-top: 5px;
+            color: #5f6065;
         }
+
+        /* css categories */
+        #wrapper__category{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #category-list{
+            display: flex;
+            list-style: none;
+            width: 30%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-list-item{
+            padding: 10px;
+        }
+
+        .list-item-link{
+            text-decoration: none;
+            color: #449b78;
+        }
+
+        #button-product{
+            width: 130px;
+            height: 50px;
+            border-radius: 5px;
+            border: none;
+            background-color: #449b78;
+            color: #fff;
+        }
+
+        #category-sort_and_search{
+            display: flex;
+            justify-content: space-between;
+            width: 30%;
+            align-items: center;
+        }
+
+        #category-sort_and_search-search{
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #aaabad;
+            width: 245px;
+            height: 50px;
+        }
+
+        #category-sort_and_search-sort{
+            display: flex;
+            width: 100px;
+            height: 55px;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 5px;
+            background-color: #f3f4f6;
+        }
+
+        #sort-text{
+            color: #727984;
+        }
+
+        .sort-icon{
+            color: #565e6c;
+        }
+
+        
     </style>
 </head>
 <body>
     <div id="wrapper">
-        <div id="wrapper__navbar">
-            <div id="navbar-menu">
-                <ul id="menu-categories">
-                    <li id="menu-categories-item">
-                        <a class="item-link" href="#">Shop</a>
+
+        <!--Navbar-->
+        <div class="grid">
+            <div id="wrapper__navbar">
+                <ul id="navbar-menu">
+                    <li id="navbar-menu-item">
+                        <a class="menu-item-link" href="#">Shop</a>
                     </li>
-                    <li id="menu-categories-item">
-                        <a class="item-link" href="#">Offers</a>
+                    <li id="navbar-menu-item">
+                        <a class="menu-item-link" href="#">Offers</a>
                     </li>
-                    <li id="menu-categories-item">
-                        <a class="item-link" href="#">Our story</a>
+                    <li id="navbar-menu-item">
+                        <a class="menu-item-link" href="#">Our story</a>
                     </li>
-                    <li id="menu-categories-item">
-                        <a class="item-link" href="#">Blog</a>
+                    <li id="navbar-menu-item">
+                        <a class="menu-item-link" href="#">Blog</a>
                     </li>
                 </ul>
-            </div>
-            <div id="navbar-logo">
-                <img src="img/logo.png" alt="">
-            </div>
-            <div id="navbar-search">
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass icon-search" ></i>
-                    <input type="text" class="input-search" placeholder="Search product...">
+    
+                <div id="navbar-logo">
+                    <img src="img/logo.png" alt="">
                 </div>
-                
-                <img src="img/shoppingCart.png" alt="">
-                <img src="img/user.png" alt="">
+    
+                <div id="navbar-searching">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass icon-search" ></i>
+                        <input type="text" class="input-search" placeholder="Search product...">
+                    </div>
+                    
+                    <img src="img/shoppingCart.png" alt="">
+                    <img src="img/user.png" alt="">
+                </div>
             </div>
         </div>
 
-        <div id="navbar__banner">
+        <!--Banner-->
+        <div id="wrapper__banner">
             <img src="img/banner.png" alt="" id="banner-img">
-            <h1 class="banner-title">Gift for your skin</h1>
-            <p class="banner-line">Aliquip fugiat ipsum nostrud ex et eu incididunt
-                <br>quis minim dolore excepteur voluptate
-            </p>
+            <div id="banner-text">
+                <h1 id="banner-title">Gift for your skin</h1>
+                <p id="banner-line">Aliquip fugiat ipsum nostrud ex et eu incididunt
+                    <br>quis minim dolore excepteur voluptate
+                </p>
+            </div>
+        </div>
+
+        <!--Categories-->
+        <div class="grid">
+            <div id="wrapper__category">
+                <ul id="category-list">
+                    <li class="category-list-item">
+                        <input type="button" id="button-product" value="All Products">
+                    </li>
+                    <li class="vategory-list-item">
+                        <a href="#" class="list-item-link"><b>Face</b></a>
+                    </li>
+                    <li class="vategory-list-item">
+                        <a href="#" class="list-item-link"><b>Body</b></a>
+                    </li>
+                </ul>
+
+                <div id="category-sort_and_search">
+                    <div id="category-sort_and_search-search">
+                        <i class="fa-solid fa-magnifying-glass icon-search" ></i>
+                        <input type="text" class="input-search" placeholder="Search product..."> <!--50x245-->
+                    </div>
+
+                    <div id="category-sort_and_search-sort">
+                        <h4 id="sort-text">Sort by</h4>
+                        <i class="fa-solid fa-sort-down sort-icon"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
