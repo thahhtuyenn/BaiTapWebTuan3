@@ -35,7 +35,7 @@
         }
 
         .grid__column3{
-            padding: 0 15px;
+            padding: 0 20px;
             width: 25%;
         }
 
@@ -53,6 +53,7 @@
         #wrapper__navbar{
             display: flex;
             justify-content: space-between;
+            padding: 5px;
         }
 
         #navbar-menu{
@@ -150,6 +151,8 @@
             border: none;
             background-color: #449b78;
             color: #fff;
+            cursor: pointer;
+            font-size: 14px;
         }
 
         #category-sort_and_search{
@@ -183,6 +186,76 @@
 
         .sort-icon{
             color: #565e6c;
+        }
+
+        /* css products */
+        #wrapper__products{
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .product-item{
+            height: 470px;
+        }
+
+        .item-img-div{
+            position: relative;
+        }
+        .item-img{
+            height: 340px;
+            
+        }
+        .product-item-status{
+            width: 80px;
+            height: 30px;
+            background-color: #ffc970;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .status-text{
+            font-size: 14px;
+            color: #9d6d1f;
+        }
+
+        .item-text{
+            width: 100%;
+        }
+        .item-text-title{
+            font-size: 24px;
+            color: color: #343a44;;
+            
+        }
+        .item-text-line{
+            font-size: 14px;
+            color: #5c5d60;
+        }
+        .item-price{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item-price-sales{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 30%;
+        }
+        .item-price-salse1{
+            font-size: 28px;
+            color: #343a44;
+        }
+        .item-price-salse2{
+            font-size: 20px;
+            color: #9b9fa9;
         }
 
         
@@ -264,6 +337,251 @@
                 </div>
             </div>
         </div>
+
+        <!--Products--> <!--w270 x h340-->
+        <div class="grid">
+            <div id="wrapper__products">
+                <div class="grid__row">
+                    <div class="grid__column3">
+                        <div class="product-item">
+                            <div class="item-img-div">
+                                <img class="item-img" src="img/productitem01.png" alt="">
+                                <div class="product-item-status">
+                                    <p class="status-text">Best-seller</p>
+                                </div>
+                            </div>
+                            <div class="item-text">
+                                <h2 class="item-text-title">Product title</h2>
+                                <p class="item-text-line">Labore sint ipsum dolore mollit</p>
+                            </div>
+                            <div class="item-price">
+                                <div class="item-price-sales">
+                                    <h2 class="item-price-salse1">$32</h2>
+                                    <h3 class="item-price-salse2">$42</h3>
+                                </div>
+                                <img src="img/shopping_product.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid__column3">
+                        <div class="product-item">
+                            <div class="item-img-div">
+                                <img class="item-img" src="img/productitem02.png" alt="">
+                                <div class="product-item-status">
+                                    <p class="status-text">Best-seller</p>
+                                </div>
+                            </div>
+                            <div class="item-text">
+                                <h2 class="item-text-title">Product title</h2>
+                                <p class="item-text-line">Labore sint ipsum dolore mollit</p>
+                            </div>
+                            <div class="item-price">
+                                <div class="item-price-sales">
+                                    <h2 class="item-price-salse1">$22</h2>
+                                    <h3 class="item-price-salse2">$28</h3>
+                                </div>
+                                <img src="img/shopping_product.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid__column3">
+                        <div class="product-item">
+                            <div class="item-img-div">
+                                <img class="item-img" src="img/productitem03.png" alt="">
+                                <div class="product-item-status">
+                                    <p class="status-text">Best-seller</p>
+                                </div>
+                            </div>
+                            <div class="item-text">
+                                <h2 class="item-text-title">Product title</h2>
+                                <p class="item-text-line">Labore sint ipsum dolore mollit</p>
+                            </div>
+                            <div class="item-price">
+                                <div class="item-price-sales">
+                                    <h2 class="item-price-salse1">$18</h2>
+                                    <h3 class="item-price-salse2">$26</h3>
+                                </div>
+                                <img src="img/shopping_product.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid__column3">
+                        <div class="product-item">
+                            <div class="item-img-div">
+                                <img class="item-img" src="img/productitem04.png" alt="">
+                                <div class="product-item-status">
+                                    <p class="status-text">Best-seller</p>
+                                </div>
+                            </div>
+                            <div class="item-text">
+                                <h2 class="item-text-title">Product title</h2>
+                                <p class="item-text-line">Labore sint ipsum dolore mollit</p>
+                            </div>
+                            <div class="item-price">
+                                <div class="item-price-sales">
+                                    <h2 class="item-price-salse1">$48</h2>
+                                    <h3 class="item-price-salse2">$56</h3>
+                                </div>
+                                <img src="img/shopping_product.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid__column3">
+                        <div class="product-item">
+                            <img class="item-img" src="img/productitem05.png" alt="">
+                            <div class="item-text">
+                                <h2 class="item-text-title">Product title</h2>
+                                <p class="item-text-line">Labore sint ipsum dolore mollit</p>
+                            </div>
+                            <div class="item-price">
+                                <div class="item-price-sales">
+                                    <h2 class="item-price-salse1">$31</h2>
+                                </div>
+                                <img src="img/shopping_product.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid__column3">
+                        <div class="product-item">
+                            <div class="item-img-div">
+                                <img class="item-img" src="img/productitem06.png" alt="">
+                                <div class="product-item-status">
+                                    <p class="status-text">New</p>
+                                </div>
+                            </div>
+                            <div class="item-text">
+                                <h2 class="item-text-title">Product title</h2>
+                                <p class="item-text-line">Labore sint ipsum dolore mollit</p>
+                            </div>
+                            <div class="item-price">
+                                <div class="item-price-sales">
+                                    <h2 class="item-price-salse1">$40</h2>
+                                    <h3 class="item-price-salse2">$48</h3>
+                                </div>
+                                <img src="img/shopping_product.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid__column3">
+                        <div class="product-item">
+                            <img class="item-img" src="img/productitem07.png" alt="">
+                            <div class="item-text">
+                                <h2 class="item-text-title">Product title</h2>
+                                <p class="item-text-line">Labore sint ipsum dolore mollit</p>
+                            </div>
+                            <div class="item-price">
+                                <div class="item-price-sales">
+                                    <h2 class="item-price-salse1">$26</h2>
+                                </div>
+                                <img src="img/shopping_product.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid__column3">
+                        <div class="product-item">
+                            <img class="item-img" src="img/productitem08.png" alt="">
+                            <div class="item-text">
+                                <h2 class="item-text-title">Product title</h2>
+                                <p class="item-text-line">Labore sint ipsum dolore mollit</p>
+                            </div>
+                            <div class="item-price">
+                                <div class="item-price-sales">
+                                    <h2 class="item-price-salse1">$18</h2>
+                                </div>
+                                <img src="img/shopping_product.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid__column3">
+                        <div class="product-item">
+                            <div class="item-img-div">
+                                <img class="item-img" src="img/productitem09.png" alt="">
+                                <div class="product-item-status">
+                                    <p class="status-text">New</p>
+                                </div>
+                            </div>
+                            <div class="item-text">
+                                <h2 class="item-text-title">Product title</h2>
+                                <p class="item-text-line">Labore sint ipsum dolore mollit</p>
+                            </div>
+                            <div class="item-price">
+                                <div class="item-price-sales">
+                                    <h2 class="item-price-salse1">$52</h2>
+                                </div>
+                                <img src="img/shopping_product.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid__column3">
+                        <div class="product-item">
+                            <img class="item-img" src="img/productitem10.png" alt="">
+                            <div class="item-text">
+                                <h2 class="item-text-title">Product title</h2>
+                                <p class="item-text-line">Labore sint ipsum dolore mollit</p>
+                            </div>
+                            <div class="item-price">
+                                <div class="item-price-sales">
+                                    <h2 class="item-price-salse1">$47</h2>
+                                    <h3 class="item-price-salse2">$42</h3>
+                                </div>
+                                <img src="img/shopping_product.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid__column3">
+                        <div class="product-item">
+                            <img class="item-img" src="img/productitem11.png" alt="">
+                            <div class="item-text">
+                                <h2 class="item-text-title">Product title</h2>
+                                <p class="item-text-line">Labore sint ipsum dolore mollit</p>
+                            </div>
+                            <div class="item-price">
+                                <div class="item-price-sales">
+                                    <h2 class="item-price-salse1">$44</h2>
+                                </div>
+                                <img src="img/shopping_product.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid__column3">
+                        <div class="product-item">
+                            <div class="item-img-div">
+                                <img class="item-img" src="img/productitem12.png" alt="">
+                                <div class="product-item-status">
+                                    <p class="status-text">New</p>
+                                </div>
+                            </div>
+                            <div class="item-text">
+                                <h2 class="item-text-title">Product title</h2>
+                                <p class="item-text-line">Labore sint ipsum dolore mollit</p>
+                            </div>
+                            <div class="item-price">
+                                <div class="item-price-sales">
+                                    <h2 class="item-price-salse1">$32</h2>
+                                    <h3 class="item-price-salse2">$42</h3>
+                                </div>
+                                <img src="img/shopping_product.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Page number-->
+
+
     </div>
 </body>
 </html>
