@@ -35,7 +35,7 @@
         }
 
         .grid__column3{
-            padding: 0 20px;
+            padding: 0 15px;
             width: 25%;
         }
 
@@ -258,7 +258,142 @@
             color: #9b9fa9;
         }
 
+        /* css pagenumber */
+        #wrapper__panigation{
+            display: flex;
+            justify-content: center;
+        }
+
+        #panigation-list{
+            display: flex;
+            width: 270px;
+            height: 230px;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+        }
+
+        .panigation-list-item{
+            font-size: 20px;
+            padding: 10;
+        }
+
+        .item{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .panigation-list-item-next{
+            padding: 0;
+        }
+
+        .panigation-list-item-link{
+            text-decoration: none;
+            color: #afb2ba;
+        }
+
+        #item-select{
+            width: 40px;
+            height: 40px;
+            background-color: #f4faf8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        #select-text{
+            color: #68b094;
+        } 
         
+        /* css footer */
+        #footer{
+            height: 440px;
+            background-color: #1d2128;
+        }
+
+        #wrapper__footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-list{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 60px;
+        }
+
+        #footer-about-list{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 250px;
+            width: 100%;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .about-list-item{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            align-items: last baseline;
+            padding: 10px;
+        }
+
+        .about-list-item-link{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .item-link-title{
+            font-size: 28px;
+        }
+
+        #footer-select{
+            display: flex;
+            border: 2px solid white;
+            width: 150px;
+            height: 30px;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 4px;
+        }
+
+        #select{
+            font-size: 16px;
+            width: 150px;
+            height: 25px;
+            border: none;
+            background-color: #1d2128;
+            color: white;
+        }
+
+        #footer-help-list{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 250px;
+            width: 100%;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .help-list-item{
+
+        }
+
+        .help-list-item-link{
+
+        }
+
+
     </style>
 </head>
 <body>
@@ -579,8 +714,116 @@
             </div>
         </div>
 
-        <!--Page number-->
+        <!--Page number--> <!--h230 x w255-->
+        <div class="grid">
+            <div id="wrapper__panigation">
+                <ul id="panigation-list">
+                    <div class="item">
+                        <li class="panigation-list-item">
+                            <img class="panigation-list-item-next" src="img/left.png" alt="">
+                        </li>
+                    </div>
+                    <div class="item">
+                        <li class="panigation-list-item">
+                            <a class="panigation-list-item-link" href="#">1</a>
+                        </li>
+                    </div>
+                    <div class="item">
+                        <li class="panigation-list-item">
+                            <div id="item-select">
+                                <p id="select-text">2</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="item">
+                        <li class="panigation-list-item">
+                            <a class="panigation-list-item-link" href="#">3</a>
+                        </li>
+                    </div>
+                    <div class="item">
+                        <li class="panigation-list-item">
+                            <a class="panigation-list-item-link" href="#">4</a>
+                        </li>
+                    </div>
+                    <div class="item">
+                        <li class="panigation-list-item">
+                            <img class="panigation-list-item-next" src="img/right.png" alt="">
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        
+        <!--footer--> <!--h430-->
+        <div id="footer">
+            <div class="grid">
+                <div id="wrapper__footer">
+                    <div class="grid__row">
+                        <div class="grid__column6">
+                            <div class="grid__row">
+                                <div class="grid__column4">
+                                    <div class="footer-list">
+                                        <ul id="footer-about-list">
+                                            <li class="about-list-item">
+                                                <a href="#" class="about-list-item-link item-link-title">About</a>
+                                            </li>
+    
+                                            <li class="about-list-item">
+                                                <a href="#" class="about-list-item-link">Home</a>
+                                            </li>
+    
+                                            <li class="about-list-item">
+                                                <a href="#" class="about-list-item-link">Shop</a>
+                                            </li>
+    
+                                            <li class="about-list-item">
+                                                <a href="#" class="about-list-item-link">Our story</a>
+                                            </li>
+    
+                                            <li class="about-list-item">
+                                                <a href="#" class="about-list-item-link">Blogs</a>
+                                            </li>
 
+                                            <li class="about-list-item">
+                                                <div id="footer-select">
+                                                    <select name="select" id="select">
+                                                        <option value="English">English</option>
+                                                        <option value="Vietnamese">Vietnamese</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column4">
+                                    <div class="footer-list">
+                                        <ul id="footer-help-list">
+                                            <li class="help-list-item">
+                                                <a href="#" class="help-list-item-link item-link-title">Help</a>
+                                            </li>
+                                            <li class="help-list-item">
+                                                <a href="#" class="help-list-item-link">Shipping & Returns</a>
+                                            </li>
+                                            <li class="help-list-item">
+                                                <a href="#" class="help-list-item-link">Track Order</a>
+                                            </li>
+                                            <li class="help-list-item">
+                                                <a href="#" class="help-list-item-link">FAQs</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column4"></div>
+                            </div>
+                        </div>
+    
+                        <div class="grid__column6">1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </body>
