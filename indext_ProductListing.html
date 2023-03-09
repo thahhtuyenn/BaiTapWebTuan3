@@ -311,88 +311,190 @@
         
         /* css footer */
         #footer{
+            width: 100%;
             height: 440px;
             background-color: #1d2128;
         }
 
         #wrapper__footer{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .footer-list{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding-top: 60px;
-        }
-
-        #footer-about-list{
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            height: 250px;
             width: 100%;
-            align-items: flex-start;
-            padding: 20px;
         }
 
-        .about-list-item{
+        #wrapper__footer-left{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 440px;
+        }
+
+        .footer-left-list{
+            width: 100%;
+            height: 240px;
+            display: flex;
+        }
+
+        .left-list1{
             display: flex;
             flex-direction: column;
+            height: 240px;
+            justify-content: space-between;
             list-style: none;
-            align-items: last baseline;
-            padding: 10px;
         }
 
-        .about-list-item-link{
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
+        .left-list2{
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            justify-content: space-between;
+            list-style: none;
         }
 
-        .item-link-title{
+        .left-list3{
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            justify-content: space-between;
+            list-style: none;
+        }
+
+        .left-list-item{
+            font-size: 16px;
+        }
+
+        .item-title{
             font-size: 28px;
         }
 
-        #footer-select{
-            display: flex;
-            border: 2px solid white;
-            width: 150px;
-            height: 30px;
+        .left-list-item-link{
+            text-decoration: none;
+            color: #d7dadf;
+        }
+
+        .left-list-item-select{
+            border: 1px solid #d7dadf;
+            width: 130px;
+            height: 35px;
+            border-radius: 4px;
             align-items: center;
-            justify-content: flex-start;
+        }
+
+        #select-language{
+            border: none;
+            outline: none;
+            background-color: #1d2128;
+            color: #d7dadf;
+            font-size: 16px;
+            width: 120px;
+            height: 30px;
+        }
+
+        #wrapper__footer-right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div-right{
+            padding-top: 100px;
+            display: flex;
+            height: 260px;
+            width: 350px;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            
+        }
+
+        .footer-right-title{
+            font-size: 28px;
+            color: #d7dadf;
+            padding-bottom: 20px;
+
+        }
+
+        .footer-right-tex{
+            color: #d7dadf;
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+
+        .footer-right-inputemail{
+            display: flex;
+            width: 345px;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid #70747e;
             border-radius: 4px;
         }
 
-        #select{
-            font-size: 16px;
+        .icon-text{
+            display: flex;
             width: 150px;
-            height: 25px;
-            border: none;
-            background-color: #1d2128;
-            color: white;
+            justify-content: space-around;
+            height: 50px;
+            align-items: center;
         }
 
-        #footer-help-list{
+        .email-icon{
+            color: #d7dadf;
+            font-size: 20px;
+        }
+
+        .inputemail-text{
+            color: #70747e;
+        }
+
+        .inputemail-subscribe{
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .inputemail-subscribe-button{
+            height: 47px;
+            width: 80px;
+            outline: none;
+            border: none;
+            background-color: #459d7a;
+            color: #d7dadf;
+            font-size: 16px;
+        }
+
+        .footer-right-icon{
+            width: 120px;
+            height: 70px;
             display: flex;
             justify-content: space-between;
-            flex-direction: column;
-            height: 250px;
-            width: 100%;
+            align-items: center;
+        }
+
+        .icon-img{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .footer-right-list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .right-list{
+            display: flex;
+            width: 370px;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 0;
+        }
+
+        .item-brand{
+            list-style: none;
             align-items: flex-start;
-            padding: 20px;
         }
 
-        .help-list-item{
-
+        .list-item{
+            color: #d7dadf;
         }
-
-        .help-list-item-link{
-
-        }
-
 
     </style>
 </head>
@@ -760,66 +862,128 @@
                 <div id="wrapper__footer">
                     <div class="grid__row">
                         <div class="grid__column6">
-                            <div class="grid__row">
-                                <div class="grid__column4">
-                                    <div class="footer-list">
-                                        <ul id="footer-about-list">
-                                            <li class="about-list-item">
-                                                <a href="#" class="about-list-item-link item-link-title">About</a>
-                                            </li>
-    
-                                            <li class="about-list-item">
-                                                <a href="#" class="about-list-item-link">Home</a>
-                                            </li>
-    
-                                            <li class="about-list-item">
-                                                <a href="#" class="about-list-item-link">Shop</a>
-                                            </li>
-    
-                                            <li class="about-list-item">
-                                                <a href="#" class="about-list-item-link">Our story</a>
-                                            </li>
-    
-                                            <li class="about-list-item">
-                                                <a href="#" class="about-list-item-link">Blogs</a>
-                                            </li>
+                            <div id="wrapper__footer-left">
+                                <div class="grid__row">
+                                    <div class="grid__column4">
+                                        <div class="footer-left-list">
+                                            <ul class="left-list1">
+                                                <li class="left-list-item item-title">
+                                                    <a href="#" class="left-list-item-link">About</a>
+                                                </li>
 
-                                            <li class="about-list-item">
-                                                <div id="footer-select">
-                                                    <select name="select" id="select">
-                                                        <option value="English">English</option>
-                                                        <option value="Vietnamese">Vietnamese</option>
-                                                    </select>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                                <li class="left-list-item">
+                                                    <a href="#" class="left-list-item-link">Home</a>
+                                                </li>
+
+                                                <li class="left-list-item">
+                                                    <a href="#" class="left-list-item-link">Shop</a>
+                                                </li>
+
+                                                <li class="left-list-item">
+                                                    <a href="#" class="left-list-item-link">Our story</a>
+                                                </li>
+
+                                                <li class="left-list-item">
+                                                    <a href="#" class="left-list-item-link">Blogs</a>
+                                                </li>
+
+                                                <li class="left-list-item">
+                                                    <div class="left-list-item-select">
+                                                        <select name="select-language" id="select-language">
+                                                            <option value="English">English</option>
+                                                            <option value="Vietnamese">Vietnamese</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+    
+                                    <div class="grid__column4">
+                                        <div class="footer-left-list">
+                                            <ul class="left-list2">
+                                                <li class="left-list-item item-title">
+                                                    <a href="#" class="left-list-item-link">Help</a>
+                                                </li>
+
+                                                <li class="left-list-item">
+                                                    <a href="#" class="left-list-item-link">Shpping & Returns</a>
+                                                </li>
+
+                                                <li class="left-list-item">
+                                                    <a href="#" class="left-list-item-link">Track Order</a>
+                                                </li>
+
+                                                <li class="left-list-item">
+                                                    <a href="#" class="left-list-item-link">FAQs</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+    
+                                    <div class="grid__column4">
+                                        <div class="footer-left-list">
+                                            <ul class="left-list3">
+                                                <li class="left-list-item item-title">
+                                                    <a href="#" class="left-list-item-link">Contact</a>
+                                                </li>
+
+                                                <li class="left-list-item">
+                                                    <a href="#" class="left-list-item-link">Phone:</a>
+                                                </li>
+
+                                                <li class="left-list-item">
+                                                    <a href="#" class="left-list-item-link">(+1)123 456 7893</a>
+                                                </li>
+
+                                                <li class="left-list-item">
+                                                    <a href="#" class="left-list-item-link">Email: </a>
+                                                </li>
+
+                                                <li class="left-list-item">
+                                                    <a href="#" class="left-list-item-link">name@email.com</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="grid__column4">
-                                    <div class="footer-list">
-                                        <ul id="footer-help-list">
-                                            <li class="help-list-item">
-                                                <a href="#" class="help-list-item-link item-link-title">Help</a>
-                                            </li>
-                                            <li class="help-list-item">
-                                                <a href="#" class="help-list-item-link">Shipping & Returns</a>
-                                            </li>
-                                            <li class="help-list-item">
-                                                <a href="#" class="help-list-item-link">Track Order</a>
-                                            </li>
-                                            <li class="help-list-item">
-                                                <a href="#" class="help-list-item-link">FAQs</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="grid__column4"></div>
                             </div>
                         </div>
     
-                        <div class="grid__column6">1</div>
+                        <div class="grid__column6">
+                            <div id="wrapper__footer-right">
+                                <div class="div-right">
+                                    <h3 class="footer-right-title">Receive new promotions</h3>
+                                <p class="footer-right-tex">Duis ea tempor commodo amet reprehende</p>
+
+                                <div class="footer-right-inputemail">
+                                    <div class="icon-text">
+                                        <i class="fa-sharp fa-regular fa-envelope email-icon"></i>
+                                        <p class="inputemail-text">Input your email</p>
+                                    </div>
+                                    <div class="inputemail-subscribe">
+                                        <input type="button" value="Subscribe" class="inputemail-subscribe-button">
+                                    </div>
+                                </div>
+
+                                <div class="footer-right-icon">
+                                    <img src="img/Twitter 1.png" alt="" class="icon-img">
+                                    <img src="img/Facebook 1.png" alt="" class="icon-img">
+                                    <img src="img/LinkedIn 1.png" alt="" class="icon-img">
+                                    <img src="img/YouTube 1.png" alt="" class="icon-img">
+                                </div>
+
+                                <div class="footer-right-list">
+                                    <ul class="right-list">
+                                        <li class="list-item item-brand">@ 2022 Brand, inc.</li>
+                                        <li class="list-item">Privacy</li>
+                                        <li class="list-item">Terms</li>
+                                        <li class="list-item">Sitemap</li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
